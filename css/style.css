@@ -185,7 +185,7 @@ input::placeholder {
   opacity: 1;
 }
 .intro {
-  background: url('/images/intro/intro-bg.jpg') center no-repeat;
+  background: url('images/intro/intro-bg.jpg') center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -321,7 +321,7 @@ input::placeholder {
   z-index: 4;
 }
 .section--download {
-  background: url('/images/Clip.jpg') center no-repeat;
+  background: url('images/Clip.jpg') center no-repeat;
   background-size: cover;
   color: #fff;
   text-align: center;
