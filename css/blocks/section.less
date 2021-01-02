@@ -1,0 +1,109 @@
+// main: ../style.less
+
+.section{
+   padding: 90px 0 130px;
+
+   &--gray{
+      background-color: #F5F5F5;
+   }
+
+   &__title{
+      text-align: center;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 43px;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      position: relative;
+
+      &::after{
+         content: '';
+         display: block;         
+         width: 65px;
+         height: 2px;
+         background-color: @accent;
+         position: absolute;
+         left: 50%;
+         bottom: -25px;
+         z-index: 4;
+         transform: translateX(-50%;)
+      }
+   }
+
+   &__subtitle{
+      text-align: center;
+      margin-bottom: 80px;
+   }
+
+
+   
+
+   &__minititle{
+      margin-bottom: 50px;
+      position: relative;
+
+      &::after{
+         content: '';
+         display: block;         
+         width: 65px;
+         height: 2px;
+         background-color: @accent;
+         position: absolute;
+         left: 0;
+         bottom: -25px;
+         z-index: 4;
+      }
+   }
+
+
+   &--download{
+      background: url('/images/Clip.jpg') center no-repeat;
+      background-size: cover;  
+      color: #fff;   
+      text-align: center; 
+      padding: 60px 0 70px;
+      position: relative;      
+
+      &:after {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: rgba(0,0,0,.5);
+         z-index: 1;       }
+
+
+      & .section__title{
+         text-align: center;
+         font-size: 36px;
+         font-weight: 400;
+         line-height: 43px;
+         text-transform: uppercase;
+         margin-bottom: 50px;
+         position: relative;
+         color: #fff;
+   
+         &::after{
+            content: '';
+            display: block;         
+            width: 65px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            left: 50%;
+            bottom: -25px;
+            z-index: 4;
+            transform: translateX(-50%;)
+         }
+      }
+
+      & .section__subtitle{
+margin-bottom: 40px;
+      }
+
+
+   }
+
+}

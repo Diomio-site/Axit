@@ -1,0 +1,52 @@
+// main: ../style.less
+
+.tabs{
+   display: flex;
+   justify-content: space-between;
+
+   &__buttons{      
+      flex-direction: column;
+   }
+
+   &__button{
+      width: 114px;
+      height: 114px;
+      background-color: #333;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      border-bottom: 1px solid rgba(#fff, .3);
+      transition: background-color .2s linear;
+      cursor: pointer;
+      line-height: 7.5;
+
+      &--active{
+         background-color: @accent;
+      }
+
+      &:hover{
+         background-color: @accent;
+      } 
+      
+
+   }
+
+   &__item{
+      margin: 0 100px
+   }
+
+   & h3{
+      margin-bottom: 45px;
+   }
+
+   &__text{
+      margin-bottom: 55px;
+   }
+
+   &__img{
+      width: 100%;
+      align-self: center;
+   }
+
+}

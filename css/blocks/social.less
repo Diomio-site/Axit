@@ -1,0 +1,46 @@
+// main: ../style.less
+
+.social{
+   box-shadow: 0 1px 3px rgba(#000, .38);
+   padding-top: 15px;
+
+   &__inner{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;      
+   }
+
+   &__content{
+      width: 31%;
+   }
+
+   &__links{   
+      width: 60%;   
+      display: flex;
+      justify-content: space-between;
+      
+      &--footer{
+         display: block;
+         text-align: center;
+         width: auto;
+      }
+   }  
+
+   &__title{
+      margin-bottom: 5px;
+   }
+   
+
+}
+
+.social__link i{
+   font-size: 48px;
+   color: #ccc;
+   transition: color .2s linear, transform .2s linear;
+
+   &:hover{
+      transform: translateY(-10px);
+      color: @accent;
+
+   }
+}

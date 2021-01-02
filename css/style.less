@@ -1,0 +1,80 @@
+@import "vars.less";
+@import "blocks/helpers.less";
+
+
+*{
+   box-sizing: border-box;
+}
+
+p{
+   margin: 0;
+   margin-bottom: 15px;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;   
+}
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;   
+   color: #333;
+}
+
+h1, h2{
+   font-family: 'Raleway', sans-serif;
+   text-transform: uppercase;
+   font-weight: 400;
+}
+
+h3{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 20px;
+}
+
+h6{
+   color: #000;
+   font-size: 14px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 600;
+}
+
+body{
+   margin: 0;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   color: @gray;
+   line-height: 1.428;
+}
+
+.container{
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.download__inner{
+   position: relative;
+   z-index: 3;
+}
+
+
+// Blocks ===========
+
+@import "blocks/btn.less";
+@import "blocks/form.less";
+
+@import "blocks/header.less";
+@import "blocks/intro.less";
+@import "blocks/social.less";
+@import "blocks/section.less";
+@import "blocks/tabs.less";
+@import "blocks/sublist.less";
+@import "blocks/features.less";
+@import "blocks/pricing.less";
+@import "blocks/reviews.less";
+
+@import "blocks/contact.less";
+
+@import "blocks/footer.less";

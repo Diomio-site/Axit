@@ -1,0 +1,48 @@
+// main: ../style.less
+
+.btn{
+   outline: 0;   
+   cursor: pointer;
+   border: 1px solid @accent;
+   background-color: @accent;
+   padding: 10px 30px;    
+   font-family: inherit;
+   font-size: 15px;
+   font-weight: 600;
+   color: #fff;
+   transition: background-color .2s linear, border .2s linear;
+
+   &:hover{   
+      background-color: #f37a23;      
+      border: 1px solid #f37a23;
+   }
+
+   &:active{
+      background-color: #e76609;
+      border: 1px solid #e76609;
+      
+   }
+
+   &:focus{      
+      border-color: #000;         
+   }  
+}
+
+.btn--white{
+   background-color: transparent;border: 1px solid #fff;
+   &:hover{
+      background-color: #f37a23;      
+      border: 1px solid #f37a23;
+   }
+
+   &:active{
+      background-color: #e76609;
+      border: 1px solid #e76609;
+   }
+}
+
+.btn--form{
+   width: 100%;
+   padding-top: 17px;
+   padding-bottom: 17px;
+}
